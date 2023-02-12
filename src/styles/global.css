@@ -1,0 +1,75 @@
+
+body {
+	margin: auto;
+	padding: 20px;
+	max-width: 80%;
+	text-align: left;
+	background: repeating-conic-gradient(from 45deg, #121212 0% 10%, #000 0% 50%);
+	background-size: 10px 10px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.2;
+	font-family: "Monospace";
+	font-size: 16px;
+	color: #c5c5c5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: purple;
+}
+nav a {
+	border: 1px solid #c5c5c5;
+	padding: 2px 10px 2px 10px;
+}
+nav{
+	padding: 5px;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+content {
+	line-height: 1.6;
+}
+table {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+pre {
+	padding: 1rem;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border: 1px solid rgb(216, 216, 216);
+	color: rgb(216, 216, 216);
+	padding: 2px 0px 2px 20px;
+	margin: 0px;
+	font-style: italic;
+}
+table{
+	width: 100%;
+}
+th,td{
+	text-align: center;
+}
+th{
+	background-color: #101010;
+}
