@@ -13,7 +13,12 @@ body {
 	font-size: 16px;
 	color: #c5c5c5;
 }
-h1,
+
+h1{
+	color: mediumslateblue;
+	font-family: "Mx437 Cordata PPC-400";
+}
+
 h2,
 h3,
 h4,
@@ -23,9 +28,11 @@ strong,
 a {
 	color: #fff;
 	text-decoration: none;
+	font-family: "Mx437 Cordata PPC-400";
+	font-size: 20px;
 }
 a:hover{
-	color: purple;
+	color: mediumslateblue;
 }
 nav a {
 	border: 1px solid #c5c5c5;
@@ -46,6 +53,9 @@ content {
 }
 table {
 	width: 100%;
+	border: 1px solid;
+	border-collapse: collapse;
+	text-align: center;
 }
 img {
 	max-width: 100%;
@@ -64,12 +74,12 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
-table{
-	width: 100%;
-}
-th,td{
-	text-align: center;
-}
 th{
-	background-color: #101010;
+	color: black;
+	background-color: mediumslateblue;
+	border: 1px solid white;
+	font-weight: 900;
+}
+td{
+	border: 1px solid;
 }

@@ -1,0 +1,45 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				list-style-type: none;
+				padding: unset;
+			}
+			ul li {
+				display: flex;
+			}
+			ul li time {
+				flex: 0 0 130px;
+				color: rgb(216, 216, 216);
+			}
+			ul li a:visited {
+				color: 
+			}
+		</style>
+	</head>
+	<body>
+		<Header/>
+		<main>
+			<section>
+				<table>
+
+					<tr><th>Proyecto</th><th>Descripcion</th><th>Fecha</th><th>Foto</th></tr>
+					<tr><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td></tr>
+					<tr><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td></tr>
+					<tr><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td><td>Proyecto</td></tr>
+
+				</table>
+			</section>
+		</main>
+		<Footer/>
+	</body>
+</html>
