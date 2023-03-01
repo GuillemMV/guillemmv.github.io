@@ -4,26 +4,18 @@ import { SITE_TITLE } from '../config';
 ---
 
 <header>
+
 	<nav>
-		<div id="guillemmv">{SITE_TITLE}</div>
+		<img src="../../public/logo.gif" alt="text_logo">
 		<HeaderLink href="/">Inicio</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">Sobre mi</HeaderLink>
 		<HeaderLink href="/projects">Proyectos</HeaderLink>
 		<HeaderLink href="https://github.com/guillemmv" target="_blank">GitHub</HeaderLink>
-
 	</nav>
 	<hr>
 </header>
 <style>
-	#guillemmv{
-		background-color: mediumslateblue;
-		color: black;
-		font-weight: bold;
-		display: inline-block;
-		padding: 3px;
-		border: 1px solid #fff;
-	}
 	header {
 		margin: 0em 0 2em;
 	}
@@ -32,5 +24,7 @@ import { SITE_TITLE } from '../config';
 	}
 	img {
 		margin: 0px;
+	}
+	nav{
 	}
 </style>

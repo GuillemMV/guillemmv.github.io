@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Anonymous";
+  src: url("../../public/fonts/AnonymousPro-Regular.ttf");
+  font-weight: bold;
+}
+
 
 body {
 	margin: auto;
@@ -9,32 +15,31 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	font-family: "Cabin-Regular";
-	font-size: 18px;
+	font-size: 16px;
 	color: #c5c5c5;
+	font-family: "Anonymous";
 }
 
-h1{
-	color: mediumslateblue;
-	font-family: "Monospace"
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-strong,
-a {
+h6{
+	color: mediumslateblue;
+	text-decoration: underline;
+}
+a{
 	color: #fff;
 	text-decoration: none;
-	font-family: "Monospace";
-	font-size: 18px;
+	font-size: 16px;
 }
+
 a:hover{
 	color: mediumslateblue;
 }
 nav a {
+	font-size: 16px;
 	border: 1px solid #c5c5c5;
 	padding: 2px 10px 2px 10px;
 }
@@ -58,17 +63,11 @@ table {
 	text-align: center;
 }
 img {
-	max-width: 100%;
-	height: auto;
-}
-pre {
-	padding: 1rem;
+	max-width: 30%;
 }
 pre > code {
-	all: unset;
-	font-family: "Monospace";
-	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
+	font-family: "Anonymous";
 }
 
 th{

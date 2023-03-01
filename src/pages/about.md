@@ -1,6 +1,6 @@
 ---
 layout: "../layouts/BlogPost.astro"
-title: "Sobre mi"
+title: "Quien soy"
 description: "About Me"
 ---
  
