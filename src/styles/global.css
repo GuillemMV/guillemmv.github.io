@@ -8,15 +8,15 @@ body {
 	background-size: 10px 10px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.2;
-	font-family: "Monospace";
-	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Cabin-Regular";
+	font-size: 18px;
 	color: #c5c5c5;
 }
 
 h1{
 	color: mediumslateblue;
-	font-family: "Mx437 Cordata PPC-400";
+	font-family: "Monospace"
 }
 
 h2,
@@ -28,8 +28,8 @@ strong,
 a {
 	color: #fff;
 	text-decoration: none;
-	font-family: "Mx437 Cordata PPC-400";
-	font-size: 20px;
+	font-family: "Monospace";
+	font-size: 18px;
 }
 a:hover{
 	color: mediumslateblue;
@@ -66,14 +66,11 @@ pre {
 }
 pre > code {
 	all: unset;
+	font-family: "Monospace";
+	font-weight: 400;
+	font-size: 15px;
 }
-blockquote {
-	border: 1px solid rgb(216, 216, 216);
-	color: rgb(216, 216, 216);
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
-}
+
 th{
 	color: black;
 	background-color: mediumslateblue;
