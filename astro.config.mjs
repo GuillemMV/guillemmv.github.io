@@ -11,5 +11,6 @@ export default defineConfig({
 		}
 	},
 	site: 'https://guillemmv.github.io',
+	base: '/',
 	integrations: [mdx(), sitemap()],
 });
