@@ -28,7 +28,7 @@ public final class Singleton {
 	
     private static Singleton instance;
     private String info = "Atributos de la clase";
-    
+
   	//Constructor privado y vacío.
     private Singleton() {        
     }

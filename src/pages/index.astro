@@ -36,6 +36,8 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 		<Header />
 		<main>
 			<section>
+				<center><img src="../doxeado.png" alt=""></center>
+				<h3>Publicaciones</h3>
 				<ul>
 					{
 						posts.map((post) => (
@@ -58,6 +60,10 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 						border-left: 3px solid mediumslateblue;
 						margin: 5px;
 						padding-left: 10px;
+					}
+					#logo{
+						max-width: 100px;
+						max-height: 100px;
 					}
 				</style>
 			</section>

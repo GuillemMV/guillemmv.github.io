@@ -41,6 +41,7 @@ a{
 
 a:hover{
 	color: mediumslateblue;
+	text-decoration: underline;
 }
 nav a {
 	font-family: "Source Code Pro";
@@ -58,8 +59,6 @@ textarea {
 input {
 	font-size: 16px;
 }
-content {
-}
 table {
 	width: 100%;
 	border: 1px solid;
@@ -71,7 +70,7 @@ img {
 }
 pre > code {
 	font-size: 16px;
-	font-family: "Consolas"
+	font-family: "Source Code Pro"
 }
 
 th{
