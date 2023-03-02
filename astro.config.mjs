@@ -10,6 +10,6 @@ export default defineConfig({
 			theme: 'poimandres'
 		}
 	},
-	site: 'https://example.com',
+	site: 'https://guillemmv.github.io',
 	integrations: [mdx(), sitemap()],
 });
