@@ -1,52 +1,40 @@
-name: Deploy Astro to GitHub Pages
+name: Github Pages Astro CI
 
-    on:
-     # Trigger the workflow every time you push to the `main` branch
-      push:
-        branches: [ main ]
-      # Allows you to run this workflow manually from the Actions tab on GitHub.
-      workflow_dispatch:
+on:
+  # Activa el workflow cada vez que hay un push a la rama `main`
+  # ¿Estás usando un nombre diferente de rama? Reemplaza `main` con el nombre de tu rama
+  push:
+    branches: [ main ]
+  # Te permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub.
+  workflow_dispatch:
+  
+# Permite clonar el repositorio y desplegar el proyecto
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-      # Allow this job to clone the repo and create a page deployment
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        # with:
+            # path: . # La ubicación de la raíz de tu proyecto de Astro dentro del repositorio. (opcional)
+            # node-version: 16 # La versión específica de Node que debe utilizarse para compilar tu proyecto. Por defecto es la 16. (opcional)
+            # package-manager: yarn # El gestor de paquetes de Node que debe instalar las dependencias y compilar tu proyecto. Automáticamente detectadas con base en tu archivo lockfile. (opcional)
 
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Check out your repository using git
-          uses: actions/checkout@v2
 
-        - name: Use Node.js 16
-          uses: actions/setup-node@v2
-          with:
-            node-version: '16'
-            cache: 'npm'
-
-        # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
-        - name: Install dependencies
-          run: npm ci
-
-        # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
-        - name: Build Astro
-          run: npm run build --if-present
-
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            path: ./dist
-
-      deploy:
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v1
-
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
