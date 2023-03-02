@@ -12,7 +12,7 @@ Cuando oímos la palabra patrón pensamos en algo repetitivo y complejo, pero au
 
 El Singleton se utiliza en entornos en los que queremos que solamente haya una instancia global de la clase con la que estamos trabajando,
 
-![Singleton](./public/singleton.png "Singleton")
+![Singleton](../public/singleton.png "Singleton")
 
 ### ¿Para qué querríamos una sola instacia?
 Por ejemplo, nos podría ser útil en el caso de utilizásemos hilos en nuestro programa. Si por algún motivo dos hilos intentan, a la vez, instanciar la clase a la cual hemos aplicado este patrón, solo uno debería poder hacerlo.
