@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "Anonymous";
-  src: url("/fonts/AnonymousPro-Regular.ttf");
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/fonts/SourceCodePro-Regular.ttf");
 }
 
 body {
@@ -12,10 +17,10 @@ body {
 	background-size: 10px 10px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.2;
-	font-size: 18px;
+	line-height: 1.15;
+	font-size: 16px;
 	color: #c5c5c5;
-	font-family: "Anonymous";
+	font-family: "Ubuntu";
 }
 
 h1,
@@ -24,20 +29,22 @@ h3,
 h4,
 h5,
 h6{
+	font-family: "Source Code Pro";
 	color: mediumslateblue;
 	text-decoration: underline;
 }
 a{
 	color: #fff;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 a:hover{
 	color: mediumslateblue;
 }
 nav a {
-	font-size: 18px;
+	font-family: "Source Code Pro";
+	font-size: 16px;
 	border: 1px solid #c5c5c5;
 	padding: 2px 10px 2px 10px;
 }
@@ -52,7 +59,6 @@ input {
 	font-size: 16px;
 }
 content {
-	line-height: 1.6;
 }
 table {
 	width: 100%;
@@ -64,8 +70,8 @@ img {
 	max-width: 30%;
 }
 pre > code {
-	font-size: 14px;
-	font-family: "Anonymous";
+	font-size: 16px;
+	font-family: "Consolas"
 }
 
 th{
