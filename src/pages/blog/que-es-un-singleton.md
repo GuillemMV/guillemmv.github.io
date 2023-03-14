@@ -15,14 +15,14 @@ El Singleton se utiliza en entornos en los que queremos que solamente haya una i
 ![Singleton](../../singleton.png)
 
 ### ¿Para qué querríamos una sola instacia?
-Por ejemplo, nos podría ser útil en el caso de utilizásemos hilos en nuestro programa. Si por algún motivo dos hilos intentan, a la vez, instanciar la clase a la cual hemos aplicado este patrón, solo uno debería poder hacerlo.
-Los recursos compartidos como bases de datos, archivos o elementos de hardware a los que solo puede acceder un proceso de forma simultánea,  són una buena razón para utilizar este famoso patrón.
-
+Por ejemplo, nos podría ser útil en el caso de que utilizásemos hilos en nuestro programa. Si por algún motivo dos hilos intentan, a la vez, instanciar la clase a la cual hemos aplicado este patrón, solo uno debería poder hacerlo.
+Los recursos compartidos como bases de datos, archivos o elementos de hardware a los que solo puede acceder un proceso de forma simultánea,  són una buena razón para utilizar este patrón tan útil.
 
 ### ¿Como funciona?
 Por defecto el constructor de una clase nos permite crear __nuevas__ instancias, así que lo tendremos que poner privado para que deje de ser accesible para el resto del programa. En su lugar tenemos *getInstance()* que será nuestro nuevo constructor público y estático.
 Este método comprobará si tenemos guardada en memoria alguna instancia de la clase, y en caso negativo se creará una nueva y se devolverá.
 
+La forma más fácil de representarlo sería esta:
 ```java
 public final class Singleton {
 	
@@ -46,4 +46,4 @@ public final class Singleton {
     //Getters y setters.
 }
 ```
-
+Así que ahora ya conoces este simple, pero potente patrón.
