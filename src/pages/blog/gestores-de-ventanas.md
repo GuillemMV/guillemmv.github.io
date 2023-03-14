@@ -9,4 +9,4 @@ Los gestores de ventanas (en Linux) són las herramientas que se encargan de adm
 
 A parte de ayudar a visualizar las "ventanas", también nos pueden proporcionar, por ejemplo, shortcuts o utilidades extra para aligerar nuestro flujo de trabajo.
 
-![i3wm_logo](../../../public/i3wm.png)
+![i3wm_logo](../../i3wm.png)
