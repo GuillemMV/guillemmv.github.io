@@ -9,18 +9,24 @@
 }
 
 body {
-	margin: auto;
-	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 	max-width: 70%;
 	text-align: left;
-	background: repeating-conic-gradient(from 45deg, #101010 0% 10%, #000 0% 50%);
-	background-size: 10px 10px;
+	background-color: #000;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.2;
 	font-size: 16px;
 	color: #c5c5c5;
 	font-family: "Ubuntu";
+	padding: 10px;
+	border: 1px solid mediumslateblue;
+	box-shadow: 0px 0px 30px 5px rgba(255,255,255,0.25);
+	background: repeating-conic-gradient(from 45deg, #101010 0% 10%, #000 0% 50%);
+	background-size: 10px 10px;
+
 }
 
 h1,
@@ -36,7 +42,11 @@ h6{
 a{
 	color: #fff;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 16px;;
+}
+
+p{
+	margin: 10px;
 }
 
 a:hover{
@@ -54,7 +64,7 @@ nav{
 }
 textarea {
 	width: 100%;
-	font-size: 16px;
+	font-size: 16px;;
 }
 input {
 	font-size: 16px;
@@ -68,9 +78,14 @@ table {
 img {
 	max-width: 30%;
 }
+
+pre{
+	margin: 10px;
+}
+
 pre > code {
 	font-size: 16px;
-	font-family: "Source Code Pro"
+	font-family: "Source Code Pro";
 }
 
 th{
