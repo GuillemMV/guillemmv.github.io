@@ -4,29 +4,48 @@ import { SITE_TITLE } from '../config';
 ---
 
 <header>
-
 	<nav>
-		<a id="logo" href="/"><img src="../logo.gif" alt=""></a>
-		<HeaderLink href="/">Inicio</HeaderLink>
-		<HeaderLink href="/about">Sobre mi</HeaderLink>
-		<HeaderLink href="/projects">Proyectos</HeaderLink>
-		<HeaderLink href="https://github.com/guillemmv" target="_blank">GitHub</HeaderLink>
+		<ul>
+			<li><HeaderLink href="/">Inicio</HeaderLink></li>
+			<li><HeaderLink href="/about">Sobre mi</HeaderLink></li>
+			<li><HeaderLink href="/projects">Proyectos</HeaderLink></li>
+			<li><HeaderLink href="https://github.com/guillemmv" target="_blank">GitHub</HeaderLink></li>
+		</ul>
 	</nav>
-	<hr>
 </header>
+
 <style>
-	header {
-		margin: 0em 0 2em;
+	nav{
+		width: 100%;
+		background:
+      radial-gradient(27% 29% at right, #0000 83%,#2b2b2b 85% 99%,#0000 101%) calc(10px/2) 10px,
+      radial-gradient(27% 29% at left, #0000 83%,#2b2b2b 85% 99%,#0000 101%) calc(10px/-2) 10px,
+      radial-gradient(29% 27% at top, #0000 83%,#2b2b2b 85% 99%,#0000 101%) 0 calc(10px/2),
+      radial-gradient(29% 27% at bottom, #0000 83%,#2b2b2b 85% 99%,#0000 101%) 0 calc(10px/-2)
+      #000000;
+		background-size: 20px 20px;
+		border-bottom: 1px solid #2b2b2b;
+
 	}
-	h2 {
-		margin: 0.5em 0;
+	ul{
+		display: flex;
+		list-style-type: none;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 20px;
 	}
-	img {
-		margin: 0px;
+	li{
+		margin-left: 5px;
 	}
-	nav{ 
+	li > a{
+		font-size: 18px;
+		font-family: "Ubuntu";
+		color: white;
+		background-color: black;
+		border: 1px solid #2e2e2e;
 	}
-	#logo{
-		border: 0px;
+	li > a:hover{
+		color: tomato;
 	}
 </style>

@@ -27,16 +27,12 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				flex: 0 0 130px;
 				color: rgb(216, 216, 216);
 			}
-			ul li a:visited {
-				color: 
-			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section>
-				<center><img src="../flag.gif" alt=""></center>
 				<h3>Publicaciones</h3>
 				<ul>
 					{
@@ -49,7 +45,12 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 										day: 'numeric',
 									})}
 								</time>
-								<a href={post.url}>{post.frontmatter.title}: {post.frontmatter.description}</a>
+								<a href={post.url}>
+									<ul id="entry-info">
+										<li><p id="entry-title">{post.frontmatter.title}</p></li>
+										<li><p id="entry-description">{post.frontmatter.description}</p></li>
+									</ul>
+								</a>
 							</li>
 						))
 					}
@@ -57,13 +58,29 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				<style>
 					#entry{
 						list-style-type: none;
-						border-left: 3px solid mediumslateblue;
 						margin: 5px;
 						padding-left: 10px;
+						font-size: 18px;
 					}
-					#logo{
-						max-width: 100px;
-						max-height: 100px;
+					time{
+						font-size: 15px;
+					}
+					#entry > a:hover{
+						text-decoration: none;
+					}
+					#entry-info{
+						border-left: 3px solid mediumslateblue;
+						padding-left: 10px;
+					}
+
+					#entry-title{
+						font-weight: 700;
+						font-size: 20px;
+						margin: 0;
+					}
+					#entry-description{
+						font-size: 16px;
+						margin: 0;
 					}
 				</style>
 			</section>
