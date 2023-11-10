@@ -1,31 +1,30 @@
 @font-face {
-  font-family: "Ubuntu";
-  src: url("/fonts/Ubuntu-Regular.ttf");
-}
-
-@font-face {
   font-family: "Source Code Pro";
   src: url("/fonts/SourceCodePro-Regular.ttf");
 }
+
 html{
 	margin-top: 0;
 }
 
 main{
-	max-width: 50%;
+	max-width: 40%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
+	padding: 10px;
+	border: 2px dashed #303030;
+	background-color: #151515;
 }
 
 body {
 	text-align: left;
-	background-color: #000;
+	background-color: #101010;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.2;
-	font-size: 16px;
+	font-size: 18px;
 	color: #c5c5c5;
-	font-family: "Ubuntu";
 	margin: 0;
 }
 
@@ -35,7 +34,6 @@ h3,
 h4,
 h5,
 h6{
-	font-family: "Source Code Pro";
 	color: mediumslateblue;
 	text-decoration: underline;
 }
@@ -78,7 +76,7 @@ pre{
 
 pre > code {
 	font-size: 14px;
-	font-family: "Monospace"
+	font-family: "Source Code Pro";
 }
 
 th{

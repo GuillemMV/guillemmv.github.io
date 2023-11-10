@@ -27,13 +27,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				flex: 0 0 130px;
 				color: rgb(216, 216, 216);
 			}
+			main{
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section>
-				<h3>Publicaciones</h3>
 				<ul>
 					{
 						posts.map((post) => (
@@ -85,6 +87,5 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 				</style>
 			</section>
 		</main>
-		<Footer />
 	</body>
 </html>
