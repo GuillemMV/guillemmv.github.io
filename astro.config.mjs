@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	markdown: {
 		shikiConfig: {
-			theme: 'poimandres'
+			theme: 'min-dark'
 		}
 	},
 	site: 'https://guillemmv.github.io',

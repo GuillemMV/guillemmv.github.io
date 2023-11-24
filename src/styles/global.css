@@ -8,7 +8,7 @@ html{
 }
 
 main{
-	max-width: 40%;
+	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
@@ -77,7 +77,7 @@ pre{
 
 pre > code {
 	font-size: 14px;
-	font-family: "Source Code Pro";
+	font-family: monospace;
 }
 
 th{
@@ -89,3 +89,15 @@ th{
 td{
 	border: 1px solid;
 }
+
+/* Ejemplo de una media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+	main{
+		max-width: 90%;
+		text-align: left;
+	}
+	#entry-info{
+		text-align: left;
+	}
+}
+  

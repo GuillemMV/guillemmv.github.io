@@ -3,7 +3,6 @@ layout: "../../layouts/BlogPost.astro"
 title: Comandos básicos.
 pubDate: "Mar 14 2023"
 description: "Linux"
-heroImage: ""
 ---
 
 Para poder ***crear, modificar, o navegar entre archivos*** de forma cómoda en cualquier distribucion de Linux, deberemos conocer una serie de comandos. En este post voy a explicar como utilizar cada uno de estos comandos, y mostraré algún caso de uso.
